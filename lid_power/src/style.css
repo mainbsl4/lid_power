@@ -1,0 +1,1235 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #D9EFFC;
+    overflow-x: hidden;
+}
+.accordion{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.accordion-item{
+    border: none !important;
+    margin: 20px;
+}
+.mainBtn{
+    width: 100%;
+    height: 170px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    border: none;
+    background: none;
+    outline: none;
+    background-color: #85C1E9;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #2f3542, -8px -8px 8px white;
+
+}
+
+.mainBtn i{
+    font-size: 50px;
+}
+.ups-logo{
+    width: 55px;
+    height: 63px;
+    padding-bottom: 10px;
+}
+
+.collapseOne.collapsOne-Click{
+    width: 100%;
+    height: 170px;
+    border: none;
+}
+.collapseTwo.collapsTwo-Click{
+    width: 100%;
+    height: 170px;
+    border: none;
+}
+
+.collapseThree.collapsThree-Click{
+    width: 100%;
+    height: 170px;
+    border: none;
+}
+
+.collapseFour.collapsFour-Click{
+    width: 100%;
+    height: 170px;
+    border: none;
+}
+
+.collapseFive.collapsFive-Click{
+    width: 100%;
+    height: 170px;
+    border: none;
+}
+
+.collapseSix.collapsSix-Click{
+    width: 100%;
+    height: 170px;
+    border: none;
+}
+
+.collapseSeven.collapsSeven-Click{
+    width: 100%;
+    height: 170px;
+    border: none;
+}
+
+
+.productBtn{
+    /* width: 100px !important; */
+    height: 50px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    border: none;
+    background: none;
+    outline: none;
+    /* background-color: #dfe4ea; */
+    border-radius: 7px;
+    padding: 0px;
+    /* box-shadow: 7px 7px 10px #57606f, -6px -6px 8px white; */
+}
+.details-btn{
+    width: 100%;
+    height: 50px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    border: none;
+    background: none;
+    outline: none;
+    background-color: #dfe4ea;
+    border-radius: 7px;
+    padding: 0px;
+    box-shadow: 7px 7px 10px #57606f, -6px -6px 8px white;
+}
+
+/* buttons edit */
+/* 
+.vertiv,.legrand, .ortea{
+    width: 125px;
+    height: auto;
+} */
+
+
+
+/* buttons edit */
+.logos{
+    width: auto;
+    height: 100%;
+}
+/* .productBody{
+    width: 300%;
+} */
+.img-body{
+    height: 150px;
+    border: 2px solid #85C1E9;
+   margin: 10px 5px;
+    box-shadow: 10px 10px 10px #57606f,-7px -7px 8px #ced6e0;
+    position: relative;
+}
+.pdf i{
+    color: #e74c3c;
+    font-size: 25px;
+}
+.img i{
+    color: black;
+    font-size: 25px;
+}
+.img-body .pdf{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    display: none;
+}
+
+.img-body .img{
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    display: none;
+}
+.img-body img{
+    width: 100%;
+    height: 100%;
+}
+
+.img-body:hover{
+    background-color: rgba(43, 39, 39, 0.255);
+    transition: .5s ease-in-out;
+}
+
+
+.img-body:hover .pdf{
+    display: block;
+    transition: .3s;
+}
+.img-body:hover .img{
+    display: block;
+    transition: .3s;
+}
+
+/* Update */
+.img-body .page{
+    display: none;
+}
+
+.img-body .page a{
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    /* background-image: linear-gradient(to bottom, red 50%, green 50%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.img-body .page a span{
+    width: auto;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    /* border-color: cadetblue; */
+    background-color: rgb(79, 228, 228);
+    padding: 7px 15px;
+    font-size: 16px;
+    font-family: 'Adamina', serif;
+    border-radius: 20px;
+    transition: .5s;
+    
+}
+
+.img-body:hover .page{
+    display: block;
+}
+
+
+
+
+.socomec,.vertiv,.legrand{
+    
+    height: 55px;
+}
+
+
+
+
+
+/* end Update */
+
+#flush-collapseOne{
+    display: none;
+}
+
+#flush-collapseOne.flush-collapseOne-block{
+    display: block;
+    z-index: 3;
+}
+
+#flush-collapseTwo,#flush-collapseThree,#flush-collapseFour,#flush-collapseFive,#flush-collapseSix,#flush-collapseSeven,#flush-collapseEight,#flush-collapseNine,
+#flush-collapseTen,#flush-collapseEleven,#flush-collapseTwelve,#flush-collapseThirteen,#flush-collapseFourteen,#flush-collapseFifteen{
+    display: none;
+}
+#flush-collapseTwo.flush-collapseTwo-block{
+    display: block;
+}
+#flush-collapseThree.flush-collapseThree-block{
+    display: block;
+}
+#flush-collapseFour.flush-collapseFour-block{
+    display: block;
+}
+#flush-collapseFive.flush-collapseFive-block{
+    display: block;
+}
+#flush-collapseSix.flush-collapseSix-block{
+    display: block;
+}
+#flush-collapseSeven.flush-collapseSeven-block{
+    display: block;
+}
+#flush-collapseEight.flush-collapseEight-block{
+    display: block;
+}
+#flush-collapseNine.flush-collapseNine-block{
+    display: block;
+}
+#flush-collapseTen.flush-collapseTen-block{
+    display: block;
+}
+#flush-collapseEleven.flush-collapseEleven-block{
+    display: block;
+}
+#flush-collapseTwelve.flush-collapseTwelve-block{
+    display: block;
+}
+#flush-collapseThirteen.flush-collapseThirteen-block{
+    display: block;
+}
+#flush-collapseFourteen.flush-collapseFourteen-block{
+    display: block;
+}
+#flush-collapseFifteen.flush-collapseFifteen-block{
+    display: block;
+}
+#flush-collapseTwo{
+    margin-left: -240px !important;
+}
+.One,.Two,.Three,.Four,.Five,.Six,.Seven,.Eight,.Nine,.Ten,.Eleven,.Twelve,.Thirteen,.Fourteen,.Fifteen{
+    z-index: 0;
+}
+.One.indexOne{
+    z-index: 4;
+}
+.Two.indexTwo{
+    z-index: 4;
+}
+.Three.indexThree{
+    z-index: 4;
+}
+.Four.indexFour{
+    z-index: 4;
+}
+.Five.indexFive{
+    z-index: 4;
+}
+.Six.indexSix{
+    z-index: 4;
+}
+.Seven.indexSeven{
+    z-index: 4;
+}
+.Eight.indexEight{
+    z-index: 4;
+}
+.Nine.indexNine{
+    z-index: 4;
+}
+.Ten.indexTen{
+    z-index: 4;
+}
+.Eleven.indexEleven{
+    z-index: 4;
+}
+.Twelve.indexTwelve{
+    z-index: 4;
+}
+.Thirteen.indexThirteen{
+    z-index: 4;
+}
+.Fourteen.indexFourteen{
+    z-index: 4;
+}
+.Fifteen.indexFifteen{
+    z-index: 4;
+}
+
+
+
+@media (min-width:1600px) {
+    #flush-collapseThree{
+        margin-left: -70px !important;
+    }
+    /* #flush-collapseSix{
+        margin-left: -450px !important;
+    }
+    #flush-collapseSeven{
+        margin-left: -350px !important;
+    } */
+    #flush-collapseTen{
+        width: 700% !important;
+        margin-left: -1100px !important;
+    }
+    .battery{
+        margin-left: -400px !important;
+    }
+
+    #flush-collapseFifteen{
+        margin-left: -100px !important;
+    }
+}
+
+@media (max-width:1300px) {
+    /* #flush-collapseSix{
+        margin-left: -250px !important;
+    } */
+
+    #flush-collapseTen{
+        margin-left: -750px !important;
+    }
+    #flush-collapseFifteen{
+        width: 500% !important;
+    }
+    /* .socomec,.vertiv,.legrand{
+        margin-left: 80px !important;
+    } */
+
+    .fiamm{
+        width: 160px !important;
+    }
+    .leoch{
+        width: 160px !important;
+    }
+    .donjin{
+        width: 160px !important;
+    }
+    .ortea,.sako{
+        width: 160px !important;
+    }
+}
+
+@media (max-width:1200px) {
+    .socomec{
+        margin-left: 50px !important;
+    }
+    .vertiv{
+        margin-left: 100px !important;
+    }
+
+    .legrand{
+        margin-left: 150px !important;
+    }
+
+    .data{
+        margin-left: -250px !important;
+    }
+
+    #flush-collapseTen{
+        margin-left: -650px !important;
+    }
+
+ 
+    .fiamm{
+        width: 150px !important;
+    }
+    .leoch{
+        width: 150px !important;
+    }
+    .donjin{
+        width: 150px !important;
+    }
+    .ortea,.sako{
+        width: 150px !important;
+    }
+}
+
+
+
+@media (max-width:1100px) {
+
+    /* .socomec{
+        margin-left: 60px !important;
+    }
+
+    .vertiv{
+        margin-left: 100px !important;
+    }
+
+    .legrand{
+        margin-left: 150px !important;
+    } */
+    .ups{
+        margin-left: -200px !important;
+    }
+    .ict{
+        margin-left: -230px !important;
+    }
+    .avr{
+        margin-left: -220px !important;
+    }
+    .electronics{
+        margin-left: -250px !important;
+    }
+  .data{
+      margin-left: -220px !important;
+  }
+  .service{
+      margin-left: -220px !important;
+  }
+
+ 
+  #flush-collapseSeven{
+      margin-left: -100px !important;
+  }
+  /* #flush-collapseEight{
+     
+  } */
+
+  #flush-collapseTen{
+      margin-left: -600px !important;
+  }
+/* 
+  #flush-collapseEleven{
+      margin-left: -80px !important;
+  } */
+
+  #flush-collapseTwelve{
+      width: 450% !important;
+  }
+  #flush-collapseFourteen{
+      width: 250% !important;
+  }
+  #flush-collapseFifteen{
+      width: 550% !important;
+  }
+
+
+  .fiamm{
+    width: 130px !important;
+}
+.leoch{
+    width: 130px !important;
+}
+.donjin{
+    width: 130px !important;
+}
+.ortea,.sako{
+    width: 130px !important;
+}
+
+}
+
+
+
+
+@media (max-width:1000px) {
+    .battery{
+        margin-left: -250px !important;
+    }
+   .electronics{
+       margin-left: -220px !important;
+   }
+   .data{
+       margin-left: -200px !important;
+   }
+
+   #flush-collapseOne{
+       margin-left: -10px !important;
+   }
+   #flush-collapseSix{
+    margin-left: -100px !important;
+ }
+   #flush-collapseSeven{
+       margin-left: -200px !important;
+   }
+   #flush-collapseEight{
+       margin-left: -50px !important;
+   }
+   #flush-collapseNine{
+    margin-left: -55px !important;
+}
+
+#flush-collapseTen{
+    margin-left: -500px !important;
+}
+
+#flush-collapseEleven{
+    margin-left: -100px !important;
+}
+
+.dahua,.tyco{
+    height: 100px;
+}
+/* }
+.fiamm{
+    margin-left: -50px;
+}
+
+.leoch{
+    margin-left: 30px;
+}
+.donjin{
+    margin-left: 110px;
+} */
+
+}
+
+
+
+@media (max-width:900px) {
+    .mainBtn i{
+        font-size: 45px;
+    }
+    .ups-logo{
+        width: 50px;
+        height: 58px;
+    }
+    
+.socomec,.vertiv,.legrand,.fiamm,.leoch,.donjin,.ortea,.sako{
+    /* width: 200px; */
+    height: 40px;
+}
+
+    /* .legrand{
+        margin-left: 120px;
+    } */
+
+   
+   .ups{
+       margin-left: -170px !important;
+   }
+   .ict{
+       margin-left: -180px !important;
+   }
+
+   .avr{
+       margin-left: -170px !important;
+   }
+
+   .electronics{
+       margin-left: -180px !important;
+   }
+   .data{
+       margin-left: -170px !important;
+   }
+
+   .service{
+       margin-left: -160px !important;
+   }
+
+   .productBtnSix{
+    width: auto !important;
+    padding: 2px 10px;
+}
+#flush-collapseSix{
+    width: 700% !important;
+}
+#flush-collapseFourteen{
+    width: 280% !important;
+}
+
+#flush-collapseThirteen{
+    margin-left: -70px !important;
+}
+.fiamm{
+    width: 100px !important;
+}
+.leoch{
+    width: 100px !important;
+}
+.donjin{
+    width: 100px !important;
+}
+
+.ortea,.sako{
+    width: 100px !important;
+}
+}
+
+
+@media (max-width:800px) {
+    /* .legrand{
+        margin-left: 0px;
+    } */
+
+   .ups{
+       margin-left: -150px !important;
+   }
+   .battery{
+       margin-left: -230px !important;
+   }
+   .ict{
+       margin-left: -150px !important;
+   }
+   .data{
+       margin-left: -200px !important;
+   }
+   .service{
+       margin-left: -100px !important;
+   }
+   .productBtnSeven{
+       width: 100px !important;
+   }
+   #flush-collapseOne{
+       width: 500% !important;
+   }
+
+   #flush-collapseTwo{
+       width: 400% !important;
+       margin-left: -100px !important;
+   }
+   
+
+   #flush-collapseThree{
+       width: 500% !important;
+   }
+   #flush-collapseFour{
+       width: 400% !important;
+   }
+
+   #flush-collapseSix{
+       width: 700% !important;
+       margin-left: -110px !important;
+   }
+
+   #flush-collapseSeven{
+       width: 450% !important;
+   }
+
+   #flush-collapseTen{
+       width: 1200% !important;
+   }
+   #flush-collapseEleven{
+       margin-left: -80px !important;
+   }
+
+   #flush-collapseTwelve{
+        width: 650% !important;
+   }
+
+   #flush-collapseFourteen{
+       width: 400% !important;
+   }
+   
+   #flush-collapseFifteen{
+       width: 650% !important;
+   }
+}
+
+
+
+@media (max-width:767px) {
+   
+    .ups{
+        margin-left: -380px !important;
+    }
+    .battery{
+        margin-left: -180px !important;
+        width: 160% !important;
+    }
+    .ict{
+        margin-left: -380px !important;
+    }
+    .avr{
+        margin-left: -380px !important;
+    }
+    .electronics{
+        margin-left: -380px !important;
+    }
+    .data{
+        margin-left: -380px !important;
+    }
+    .service{
+        margin-left: -140px !important;
+        width: 150% !important;
+    }
+    .productBtnSeven{
+        width: 100px !important;
+    }
+
+
+  .vertiv{
+      margin-left: -10px !important;
+  }
+
+  .legrand{
+      margin-left: -50px !important;
+  }
+
+    
+   #flush-collapseOne{
+    width: 300% !important;
+    margin-left: -200px !important;
+}
+
+#flush-collapseTwo{
+    width: 300% !important;
+    margin-left: -420px !important;
+    
+}
+
+#flush-collapseFifteen{
+    width: 300% !important;
+    margin-left: 20px !important;
+}
+
+#flush-collapseThree{
+    width: 400% !important;
+    margin-left: -20px !important;
+}
+#flush-collapseFour{
+    width: 300% !important;
+    margin-left: -150px !important;
+}
+
+#flush-collapseSix{
+    width: 300% !important;
+    margin-left: -80px !important;
+}
+
+#flush-collapseSeven{
+    width: 200% !important;
+    margin-left: -250px !important;
+}
+
+#flush-collapseEight{
+    margin-left: -10px !important;
+}
+
+#flush-collapseNine{
+    margin-left: -10px !important;
+}
+
+
+#flush-collapseTen{
+    width: 350% !important;
+    margin-left: -200px !important;
+}
+
+#flush-collapseEleven{
+    width: 150% !important;
+    margin-left: 10px !important;
+}
+
+#flush-collapseTwelve{
+     width: 400% !important;
+     margin-left: 40px !important;
+}
+
+#flush-collapseFourteen{
+    width: 250% !important;
+    margin-left: -190px !important;
+}
+
+#flush-collapseThirteen{
+    margin-left: -50px !important;
+}
+ }
+
+
+
+
+ 
+@media (max-width:667px) {
+   
+    .ups{
+        margin-left: -300px !important;
+    }
+    .battery{
+        margin-left: -130px !important;
+        width: 160% !important;
+    }
+    .ict{
+        margin-left: -300px !important;
+    }
+    .avr{
+        margin-left: -300px !important;
+    }
+    .electronics{
+        margin-left: -300px !important;
+    }
+    .data{
+        margin-left: -300px !important;
+    }
+    .service{
+        margin-left: -100px !important;
+        width: 150% !important;
+    }
+    .productBtnSeven{
+        width: 100px !important;
+    }
+
+
+    #flush-collapseTen{
+        width: 400% !important;
+        margin-left: -220px !important;
+    }
+    #flush-collapseOne{
+        margin-left: -160px !important;
+    }
+
+    #flush-collapseTwo{
+        margin-left: -380px  !important;
+    }
+    #flush-collapseFifteen{
+        margin-left: 50px !important;
+    }
+    
+#flush-collapseEleven{
+    width: 150% !important;
+    margin-left: -10px !important;
+}
+
+ }
+
+
+
+ 
+@media (max-width:575px) {
+    
+   
+    .ups{
+        margin-left: -300px !important;
+    }
+    .battery{
+        margin-left: -50px !important;
+        width: 120% !important;
+    }
+    .ict{
+        margin-left: -330px !important;
+    }
+    .avr{
+        margin-left: -330px !important;
+    }
+    .electronics{
+        margin-left: -330px !important;
+    }
+    .data{
+        margin-left: -330px !important;
+    }
+    .service{
+        margin-left: -120px !important;
+        width: 150% !important;
+    }
+
+    .socomec{
+        margin-left: 80px !important;
+    }
+
+    .vertiv{
+        margin-left: -20px !important;
+    }
+
+    .legrand{
+        margin-left: -100px !important;
+    }
+
+
+    #flush-collapseOne{
+        width: 280% !important;
+        margin-left: -70px;
+
+    }
+
+    #flush-collapseTwo{
+        margin-left: -380px !important;
+    }
+
+    #flush-collapseSix{
+        margin-left: -10px !important;
+    }
+
+    
+    .productBtnSeven{
+        width: 100px !important;
+    }
+
+    
+    #flush-collapseTen{
+        width: 320% !important;
+        margin-left: -100px !important;
+    }
+    .cisco,.dell,.hp,.dahua,.tyco{
+        height: 80px;
+    }
+ }
+
+
+ @media (max-width:500px) {
+     #flush-collapseOne{
+         margin-left: -100px !important;
+     }
+     #flush-collapseTwo{
+         margin-left: -320px !important;
+     }
+ }
+
+
+ 
+@media (max-width:475px) {
+    .mainBtn i{
+        font-size: 40px;
+    }
+    .ups-logo{
+        width: 45px;
+        height: 52px;
+    }
+    .ups{
+        margin-left: -230px !important;
+        /* width: 160% !important; */
+    }
+    .battery{
+        margin-left: -50px !important;
+        /* width: 160% !important; */
+    }
+    .ict{
+        margin-left: -230px !important;
+    }
+    .avr{
+        margin-left: -220px !important;
+    }
+    .electronics{
+        margin-left: -260px !important;
+    }
+    .data{
+        margin-left: -260px !important;
+    }
+    .service{
+        margin-left: -80px !important;
+        /* width: 120% !important; */
+    }
+
+    #flush-collapseOne{
+        width: 300% !important;
+        margin-left: -130px !important;
+
+    }
+    #flush-collapseTwo{
+        width: 280% !important;
+        margin-left: -300px !important;
+    }
+    
+#flush-collapseThree{
+    width: 700% !important;
+    margin-left: -20px !important;
+}
+#flush-collapseFour{
+    width: 500% !important;
+    margin-left: -80px !important;
+}
+
+#flush-collapseSix{
+    width: 300% !important;
+    margin-left: -20px !important;
+}
+
+#flush-collapseSeven{
+    width: 300% !important;
+    margin-left: -160px !important;
+}
+
+    
+#flush-collapseEight{
+    margin-left: -10px !important;
+}
+
+#flush-collapseNine{
+    margin-left: -70px !important;
+}
+
+
+#flush-collapseTen{
+    /* width: 400% !important; */
+    margin-left: -50px !important;
+}
+
+#flush-collapseEleven{
+    width: 150% !important;
+    margin-left: -30px !important;
+}
+
+#flush-collapseTwelve{
+     width: 600% !important;
+     margin-left: 40px !important;
+}
+
+#flush-collapseFourteen{
+    width: 400% !important;
+    margin-left: -280px !important;
+}
+    .productBtnFourteen,.productBtnThirteen ,.productBtnTwelve{
+        width: 100px !important;
+        margin: 0px 10px;
+    }
+    #flush-collapseThirteen{
+        margin-left: -50px !important;
+    }
+
+
+
+
+    .fiamm,.leoch,.donjin{
+        width: 80px !important;
+        height: 40px;
+    }
+ }
+
+
+ @media (max-width:400px) {
+    #flush-collapseOne{
+        margin-left: -80px !important;
+    }
+     #flush-collapseTwo{
+         margin-left: -230px !important;
+     }
+
+
+     .ups{
+         margin-left: -200px !important;
+     }
+
+
+     .socomec,.vertiv, .legrand{
+        width: 80px !important;
+    }
+  
+ }
+
+ 
+ 
+@media (max-width:350px) {
+    /* .legrand{
+        margin-right: -20px;
+    } */
+    .ups{
+        margin-left: -180px !important;
+        /* width: 160% !important; */
+    }
+    .battery{
+        margin-left: -80px !important;
+        /* width: 160% !important; */
+    }
+    .ict{
+        margin-left: -200px !important;
+    }
+    .avr{
+        margin-left: -180px !important;
+    }
+    .electronics{
+        margin-left: -180px !important;
+    }
+    .data{
+        margin-left: -180px !important;
+    }
+    .service{
+        margin-left: -80px !important;
+        /* width: 120% !important; */
+    }
+
+    #flush-collapseOne{
+        width: 400% !important;
+        margin-left: -110px !important;
+
+    }
+    #flush-collapseTwo{
+        width: 350% !important;
+        margin-left: -250px !important;
+    }
+    
+#flush-collapseThree{
+    width: 1100% !important;
+    margin-left: 40px !important;
+}
+#flush-collapseFour{
+    width: 600% !important;
+    margin-left: -50px !important;
+}
+
+#flush-collapseSix{
+    width: 400% !important;
+    margin-left: -20px !important;
+}
+
+#flush-collapseSeven{
+    width: 350% !important;
+    margin-left: -150px !important;
+}
+
+    
+#flush-collapseEight{
+    margin-left: -40px !important;
+}
+
+#flush-collapseNine{
+    margin-left: -80px !important;
+}
+
+
+#flush-collapseTen{
+    width: 420% !important;
+    margin-left: -50px !important;
+}
+
+#flush-collapseEleven{
+    width: 150% !important;
+    margin-left: -80px !important;
+}
+
+#flush-collapseTwelve{
+     width: 700% !important;
+     margin-left: 40px !important;
+}
+
+#flush-collapseFourteen{
+    width: 400% !important;
+    margin-left: -150px !important;
+}
+    .productBtnFourteen,.productBtnThirteen ,.productBtnTwelve{
+        width: 100px !important;
+        margin: 0px 10px;
+    }
+    .productBtnThree,.productBtnFour,.productBtnFive{
+        width: 100px !important;
+    }
+    #flush-collapseThirteen{
+        margin-left: -50px !important;
+    }
+
+
+    .socomec,.vertiv,.legrand{
+        width: 70px !important;
+    }
+
+    .cisco,.dell,.hp,.dahua,.tyco{
+        width: 80px;
+        height: 50px;
+    }
+    
+ }
+
+
+
+ 
+@media (max-width:300px) {
+    .legrand{
+        margin-right: -50px;
+    }
+    .ups{
+        margin-left: -60px !important;
+        width: 160% !important;
+    }
+    .battery{
+        margin-left: -70px !important;
+        width: 160% !important;
+    }
+    .ict{
+        margin-left: -180px !important;
+    }
+    .avr{
+        margin-left: -150px !important;
+    }
+    .electronics{
+        margin-left: -200px !important;
+    }
+    .data{
+        margin-left: -190px !important;
+    }
+    .service{
+        margin-left: -50px !important;
+        width: 120% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .productBtnSeven{
+        width: 100px !important;
+    }
+    #flush-collapseTen{
+        margin-left: -50px !important;
+    }
+    .productBtnFourteen,.productBtnThirteen ,.productBtnTwelve{
+        width: 100px !important;
+        margin: 0px 10px;
+    }
+   
+}
